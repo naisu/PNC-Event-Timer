@@ -1,0 +1,324 @@
+/* Core Styles */
+:root {
+    --shadow: 0 1px 5px rgba(206, 215, 228, 0.8);
+    --text-shadow: 0 2px 5px rgba(6, 135, 240, 0.8);
+}
+
+body {
+    background-color: #14141bf6;
+    font-family: 'Netron', sans-serif;
+    font-size: clamp(1.3rem, 2.5vw, 2.2rem);
+    color: rgb(253, 252, 252);
+    max-width: 1920px;
+    margin: auto;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-shadow: var(--text-shadow);
+}
+
+img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: "Allerta Stencil";
+    src: url(../fonts/AllertaStencil-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Netron";
+    src: url(../fonts/Netron.ttf) format('truetype');
+}
+
+/* Styling on images and headers */
+
+.full-img {
+    padding: 0.7em;
+}
+
+.heading {
+    margin: 20px 0px;
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* TIMER */
+.countdown-timer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: var(--text-shadow)
+}
+
+/* BANNER */
+#website-banner {
+    min-height: 284px;
+    color: rgb(32, 32, 32);
+    font-family: "Netron", sans-serif;
+    font-size: 1em;
+}
+
+#website-banner .banner-img {
+    position: absolute;
+    width: 100%;
+    height: 284px;
+    background: url(../images/banner/banner_full.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.logo-container {
+    width: 300px;
+    height: auto;
+    padding-top: 20px;
+}
+
+#website-banner h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px #e9e9dd;
+}
+
+#website-banner .content-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+/* MAIN EVENT */
+
+.main-event {
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+}
+
+/* Ongoing Rate Up */
+
+.rate-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.rate-up {
+    max-width: 490px;
+    align-content: center;
+    margin: 20px;
+}
+
+/* Skins */
+
+.skins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skin-item {
+    max-width: 1200px;
+}
+
+.doll-skins {
+    display: flex;
+    flex-flow: wrap;
+    max-width: 1200px;
+    justify-content: space-around;
+}
+
+.doll-skins h3 {
+    text-align: center;
+    font-size: 0.6em;
+}
+
+.doll-item {
+    width: min(80px, 75%, 250px);
+    margin: 20px 20px;
+}
+
+.doll-item:hover {
+    opacity: 0.5;
+}
+
+/* Limited Time Sales */
+
+.limited-sale {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.special-packs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.limited-sale h1 {
+    text-align: center;
+}
+
+
+
+/* Upcoming Events */
+.upcoming-events,
+.ongoing-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.event {
+    max-width: 1400px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    min-height: 100px;
+}
+
+/* Media */
+
+@media(min-width: 750px) {
+    .countdown-timer-container {
+        font-size: 2rem;
+    }
+
+    #event-image {
+        display: none;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .main-event {
+        padding: 50px 0;
+    }
+
+    .event-wrap {
+        min-height: 700px;
+        width: 100%;
+        background: url(../images/main_event/PNC_Kuro_Event_CG.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--shadow);
+        justify-content: space-around;
+        font-size: 3rem;
+    }
+
+    .event-name {
+        display: flex;
+        margin-left: 50px;
+        font-size: 2.5rem;
+    }
+
+    .doll-item {
+        width: 250px;
+    }
+
+    .doll-skins h3 {
+        font-size: 1em;
+    }
+}
+
+
+@media(min-width: 1000px) {
+    .rate-up {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        max-width: none;
+        min-width: 490px;
+    }
+
+    img {
+        max-width: 800px;
+    }
+
+    .item {
+        margin: 20px;
+    }
+}
+
+@media(min-width: 1344px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    #website-banner .banner-img {
+        position: absolute;
+        width: 1920px;
+    }
+
+    img {
+        max-width: 1920px;
+    }
+
+    .main-event {
+        flex-flow: nowrap;
+    }
+
+    .time-remaining .countdown-timer-container {
+        margin-bottom: -50px;
+    }
+
+    .time-remaining .countdown-timer-event {
+        font-size: 4rem;
+    }
+
+    .rate-wrap {
+        max-width: 490px;
+        margin-left: 20px;
+    }
+
+    .rate-wrap .heading {
+        margin-top: 0;
+    }
+
+    .rate-up {
+        flex-direction: column;
+    }
+
+    .event img {
+        max-width: 1344px;
+    }
+
+    .pack {
+        margin-top: 40px;
+    }
+
+    .ongoing-event {
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0px 10px 0px;
+        gap: 200px;
+    }
+}
