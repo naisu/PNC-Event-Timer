@@ -63,6 +63,12 @@ img {
     text-shadow: var(--text-shadow)
 }
 
+.event-end {
+    /* Styles text when an item's timer hits 0 */
+    color: rgb(238, 10, 10);
+    text-shadow: 0 2px 5px rgb(15, 1, 1);
+}
+
 /* BANNER */
 #website-banner {
     min-height: 284px;
@@ -179,7 +185,6 @@ img {
 }
 
 
-
 /* Upcoming Events */
 .upcoming-events,
 .ongoing-events {
@@ -245,6 +250,10 @@ footer {
 
     .doll-skins h3 {
         font-size: 1em;
+    }
+
+    .pack img {
+        min-height: 225px; 
     }
 }
 
@@ -321,4 +330,5 @@ footer {
         margin: 50px 0px 10px 0px;
         gap: 200px;
     }
+
 }
