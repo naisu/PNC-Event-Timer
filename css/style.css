@@ -105,12 +105,36 @@ img {
     padding-left: 20px;
 }
 
+/* Server Info */
+.server {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0px;
+    gap: 20px;
+    min-width: 50px;
+    flex: 1;
+    font-family: "Allerta Stencil", sans-serif;
+}
+
+.server-item {
+    display: flex;
+    width: 550px;
+    gap: 20px;
+}
+
+.countdown-server-container {
+    display: flex;
+}
+
 /* MAIN EVENT */
 
 .main-event {
     display: flex;
     flex-flow: wrap;
     text-align: center;
+    padding-top: 0;
 }
 
 /* Ongoing Rate Up */
@@ -222,7 +246,7 @@ footer {
     }
 
     .main-event {
-        padding: 50px 0;
+        padding: 0px 0px, 50px, 0px;
     }
 
     .event-wrap {
