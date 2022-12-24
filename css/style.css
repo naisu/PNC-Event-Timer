@@ -76,7 +76,7 @@ img {
 }
 
 /* BANNER */
-.website-banner{
+.website-banner {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -206,6 +206,7 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex: 1;
 }
 
 .event {
@@ -267,7 +268,7 @@ footer {
     }
 
     .pack img {
-        min-height: 225px; 
+        min-height: 225px;
     }
 }
 
@@ -281,32 +282,33 @@ footer {
 
     }
 
-    img {
-        max-width: 800px;
+    .ongoing-event img {
+        max-width: 600px;
     }
+
+    .ongoing-event {
+        flex-direction: row;
+    }
+
 }
 
 @media(min-width: 1344px) {
+
+    /* Main Styling */
     body {
         max-width: 1350px;
         font-size: 1.5rem;
     }
-    h1{
+
+    h1 {
         font-size: 2.5rem;
     }
+
     h2 {
         font-size: 3.5rem;
     }
 
-    .event-wrap {
-        min-width: 1000px;
-        max-height: 700px;
-    }
-
-    .main-event {
-        flex-flow: nowrap;
-    }
-
+    /* Timer Styling */
     .time-remaining .countdown-timer-container {
         margin-bottom: -50px;
         font-size: 1rem;
@@ -318,6 +320,16 @@ footer {
 
     .countdown-timer-container {
         font-size: 1.6rem;
+    }
+
+    /* Main Event & Rate-Up Wrapper */
+    .main-event {
+        flex-flow: nowrap;
+    }
+
+    .event-wrap {
+        min-width: 1000px;
+        max-height: 700px;
     }
 
     .rate-wrap {
@@ -344,15 +356,23 @@ footer {
         margin: 20px 0px;
     }
 
+    /* Ongoing Events */
+    .ongoing-event {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;    
+    }
+
+    /* Sales */
     .pack {
         margin-top: 40px;
     }
 
-    .ongoing-event {
+    .event-container {
         display: flex;
-        flex-direction: row;
-        margin: 50px 0px 10px 0px;
-        gap: 200px;
+        flex: 1;
+        justify-content: center;
+        gap: 50px;
     }
 
 }
