@@ -68,7 +68,7 @@ function countServer() {
     const secondsValue = document.querySelector('.st-seconds');
     // Setting UTC time to PST/UTC-8
     let utcHour = dateTimeNow.getUTCHours() -8;
-    if(utcHour < 8) {
+    if(utcHour < 0) {
         utcHour += 24;
     }
     hoursValue.innerHTML = leadingZero(utcHour) + ":";

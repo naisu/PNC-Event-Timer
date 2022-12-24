@@ -14,34 +14,12 @@
 
 <body>
     <!-- BANNER -->
-    <header id="website-banner" class="grid">
-        <div class="banner-img"></div>
-        <div class="content-wrap">
-            <div class="logo-container">
-                <div><img src="images/banner/nc_logo.png" alt=""></div>
-                <h1>EVENT<br>TIMER</h1>
-            </div>
+    <header class="website-banner">
+        <div class="website-text">
+            <h1>PNC EVENT TIMER</h1>
         </div>
-    </header>
 
-    <!-- Server Time -->
-    <div class="server">
-        <div class="server-item">Server Time:   
-            <div class="countdown-server-container">
-                <div class="countdown-server-item st-hours">00</div>
-                <div class="countdown-server-item st-minutes">00</div>
-                <div class="countdown-server-item st-seconds">00</div>
-            </div>
-        </div>
-        <div class="server-item">Server Reset:
-            <div class="countdown-server-container">
-                <div class="countdown-server-item sr-hours">00</div>
-                <div class="countdown-server-item sr-minutes">00</div>
-                <div class="countdown-server-item sr-seconds">00</div>
-            </div>
-        </div>
-        <div class="server-item">Server Status: ONLINE</div>
-    </div>
+    </header>
     <!-- MAIN EVENT-->
     <section class="main-event">
         <!-- Event CG -->
@@ -67,11 +45,35 @@
                 </div>
             </div>
         </div>
-        <!-- Ongoing Rate Up-->
+
+        <!-- Server Info & Rate Up -->
         <div class="rate-wrap">
-            <div class="heading">
-                <h1>Rate Up</h1>
+            <div class="heading">Server</div>
+            <div class="server">
+                <div class="server-item">
+                    <div class="countdown-server-container">
+                        <div>Time:</div>
+                        <div class="countdown-server-item st-hours">00</div>
+                        <div class="countdown-server-item st-minutes">00</div>
+                        <div class="countdown-server-item st-seconds">00</div>
+                    </div>
+                </div>
+                <div class="server-item">
+                    <div class="countdown-server-container">
+                        <div>Reset:</div>
+                        <div class="countdown-server-item sr-hours">00</div>
+                        <div class="countdown-server-item sr-minutes">00</div>
+                        <div class="countdown-server-item sr-seconds">00</div>
+                    </div>
+                </div>
+                <div class="server-item">
+                    <div class="countdown-server-container">
+                        <div>Status:</div>
+                        <div class="server-status">ONLINE</div>
+                    </div>
+                </div>
             </div>
+            <div class="active-banner">CURRENT BANNER</div>
             <div class="rate-up">
                 <div class="item t3">
                     <img src="images/rateup/kuro_banner.png" alt="Kuro Banner">
