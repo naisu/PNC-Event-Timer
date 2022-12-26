@@ -12,6 +12,7 @@ body {
     max-width: 1920px;
     margin: auto;
     padding: 0;
+    text-decoration: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -21,10 +22,19 @@ body {
     text-shadow: var(--text-shadow);
 }
 
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
 img {
     width: 100%;
     box-shadow: var(--shadow);
 }
+
 
 /* Fonts */
 
@@ -44,10 +54,18 @@ img {
     padding: 0.7em;
 }
 
+.full-img img:hover {
+    opacity: 0.70;
+}
+
 .heading {
     margin: 20px 0px;
     width: 100%;
     box-shadow: var(--shadow);
+    max-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* TIMER */
@@ -60,7 +78,13 @@ img {
     margin: 30px 0px;
     text-align: center;
     font-size: 20px;
-    text-shadow: var(--text-shadow)
+    text-shadow: var(--text-shadow);
+}
+
+.item {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
 .event-end {
@@ -70,40 +94,39 @@ img {
 }
 
 /* BANNER */
-#website-banner {
-    min-height: 284px;
-    color: rgb(32, 32, 32);
-    font-family: "Netron", sans-serif;
-    font-size: 1em;
-}
-
-#website-banner .banner-img {
-    position: absolute;
+.website-banner {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    height: 284px;
-    background: url(../images/banner/banner_full.png);
-    background-position: right 45% bottom 0%;
-    background-repeat: no-repeat;
-    z-index: -1;
 }
 
-.logo-container {
-    width: 300px;
-    height: auto;
-    padding-top: 20px;
+.website-text {
+    font-size: clamp(0.5rem, 0.8rem, 1.2rem);
+    text-align: center;
 }
 
-#website-banner h1 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-shadow: 1px 1px #e9e9dd;
-}
-
-#website-banner .content-wrap {
+/* Server Info */
+.server {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    margin: 0;
+    gap: 20px;
+    font-family: "Allerta Stencil", sans-serif;
 }
+
+.server-item {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.countdown-server-container {
+    display: grid;
+    grid-template-columns: 120px 40px 40px 40px;
+    align-items: flex-start;
+}
+
 
 /* MAIN EVENT */
 
@@ -111,6 +134,7 @@ img {
     display: flex;
     flex-flow: wrap;
     text-align: center;
+    padding-top: 0;
 }
 
 /* Ongoing Rate Up */
@@ -125,16 +149,27 @@ img {
 .rate-up {
     max-width: 490px;
     align-content: center;
-    margin: 20px;
+
+}
+
+.active-banner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: var(--shadow);
 }
 
 /* Skins */
 
-.skins {
+.skin {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+
+.skin-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .skin-item {
@@ -148,14 +183,14 @@ img {
     justify-content: space-around;
 }
 
-.doll-skins h3 {
+.doll-skins h3,
+.doll-skins h4 {
     text-align: center;
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 
 .doll-item {
-    width: min(80px, 75%, 250px);
-    margin: 20px 20px;
+    max-width: 110px;
 }
 
 .doll-item:hover {
@@ -192,11 +227,20 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex: 1;
 }
 
 .event {
     max-width: 1400px;
     margin: 0px 0px 0px 0px;
+}
+
+.event .full-img {
+    margin-bottom: -40px;
+}
+
+.ongoing-event .countdown-timer-container {
+    font-size: 1.6rem;
 }
 
 /* Footer */
@@ -222,89 +266,161 @@ footer {
     }
 
     .main-event {
-        padding: 50px 0;
+        padding: 0px 0px, 50px, 0px;
     }
 
     .event-wrap {
+        --bg-image: url(../images/main_event/PNC_Kuro_Event_CG.png);
+        --bg-image-opacity: 0.75;
         min-height: 700px;
         width: 100%;
-        background: url(../images/main_event/PNC_Kuro_Event_CG.png);
-        background-size: cover;
-        background-position: center;
         display: flex;
         flex-direction: column;
         box-shadow: var(--shadow);
         justify-content: space-around;
         font-size: 3rem;
+        position: relative;
+        isolation: isolate;
+    }
+
+    /* Controls opacity */
+    .event-wrap::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        opacity: var(--bg-image-opacity);
+
+        background-image: var(--bg-image);
+        background-size: cover;
+        background-position: center;
     }
 
     .event-name {
         display: flex;
         margin-left: 50px;
-        font-size: 2.5rem;
     }
+
+    .event-name h1 {
+        font-size: 3rem;
+    }
+
+    .event-wrap .time-remaining {
+        margin-bottom: 100px;
+    }
+
 
     .doll-item {
-        width: 250px;
+        max-width: 150px;
     }
 
-    .doll-skins h3 {
+    .doll-skins h3,
+    .doll-skins h4 {
         font-size: 1em;
     }
 
+    .pack .countdown-timer-container {
+        font-size: 1.5rem;
+    }
+
     .pack img {
-        min-height: 225px; 
+        max-width: 400px;
+        height: auto;
     }
 }
 
 
 @media(min-width: 1000px) {
+
+    /* Timer Styling */
+    .time-remaining .countdown-timer-container {
+        margin-bottom: -100px;
+        font-size: 1.5rem;
+    }
+
     .rate-up {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-evenly;
-        max-width: none;
-        min-width: 490px;
+
     }
 
-    img {
+    .ongoing-event img {
+        max-width: 600px;
+    }
+
+    .upcoming-event img {
+        max-width: 600px;
+    }
+
+    .ongoing-event {
+        flex-direction: row;
+    }
+
+    .skin {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .skin-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skin-item .full-img {
         max-width: 800px;
     }
 
-    .item {
-        margin: 20px;
+    .doll-skins {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        font-size: 1.2rem;
+        gap: 50px;
     }
+
 }
 
 @media(min-width: 1344px) {
+
+    /* Main Styling */
+    body {
+        max-width: 1350px;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
     h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
-    #website-banner .banner-img {
-        position: absolute;
-        width: 1920px;
+    .time-remaining .countdown-timer-event {
+        font-size: 2.5rem;
     }
 
-    img {
-        max-width: 1920px;
+    .countdown-timer-container {
+        font-size: 1.rem;
     }
 
+    /* Main Event & Rate-Up Wrapper */
     .main-event {
         flex-flow: nowrap;
     }
 
-    .time-remaining .countdown-timer-container {
-        margin-bottom: -50px;
-    }
-
-    .time-remaining .countdown-timer-event {
-        font-size: 4rem;
+    .event-wrap {
+        min-width: 1000px;
+        max-height: 700px;
     }
 
     .rate-wrap {
-        max-width: 490px;
+        max-width: 30%;
         margin-left: 20px;
     }
 
@@ -314,21 +430,73 @@ footer {
 
     .rate-up {
         flex-direction: column;
+
     }
 
-    .event img {
-        max-width: 1344px;
+    .rate-up img {
+        width: 300px;
     }
 
+    .rate-up .countdown-timer-container {
+        font-size: 1.2rem;
+        width: 290px;
+        margin: 20px 0px;
+    }
+
+    /* Ongoing Events */
+    .ongoing-event {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    /* Sales */
     .pack {
         margin-top: 40px;
     }
 
-    .ongoing-event {
+    .event-container {
         display: flex;
-        flex-direction: row;
-        margin: 50px 0px 10px 0px;
-        gap: 200px;
+        flex: 1;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
     }
 
+    .skin-container {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .skin-container img {
+        max-width: 700px;
+        max-height: 330px;
+    }
+
+    .doll-item {
+        max-width: 120px;
+        text-align: center;
+    }
+
+    .skin {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .skin-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doll-skins {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
 }
