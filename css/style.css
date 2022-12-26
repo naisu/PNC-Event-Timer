@@ -12,6 +12,7 @@ body {
     max-width: 1920px;
     margin: auto;
     padding: 0;
+    text-decoration: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -21,10 +22,19 @@ body {
     text-shadow: var(--text-shadow);
 }
 
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
 img {
     width: 100%;
     box-shadow: var(--shadow);
 }
+
 
 /* Fonts */
 
@@ -48,6 +58,10 @@ img {
     margin: 20px 0px;
     width: 100%;
     box-shadow: var(--shadow);
+    max-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* TIMER */
@@ -83,7 +97,7 @@ img {
 }
 
 .website-text {
-    font-size: 1.2rem;
+    font-size: clamp(0.5rem, 0.8rem, 1.2rem);
     text-align: center;
 }
 
@@ -107,7 +121,6 @@ img {
     display: grid;
     grid-template-columns: 120px 40px 40px 40px;
     align-items: flex-start;
-
 }
 
 
@@ -144,11 +157,15 @@ img {
 
 /* Skins */
 
-.skins {
+.skin {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+
+.skin-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .skin-item {
@@ -162,14 +179,14 @@ img {
     justify-content: space-around;
 }
 
-.doll-skins h3 {
+.doll-skins h3,
+.doll-skins h4 {
     text-align: center;
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 
 .doll-item {
-    width: min(80px, 75%, 250px);
-    margin: 20px 20px;
+    max-width: 110px;
 }
 
 .doll-item:hover {
@@ -214,6 +231,10 @@ img {
     margin: 0px 0px 0px 0px;
 }
 
+.event .full-img {
+    margin-bottom: -40px;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -241,29 +262,52 @@ footer {
     }
 
     .event-wrap {
+        --bg-image: url(../images/main_event/PNC_Kuro_Event_CG.png);
+        --bg-image-opacity: 0.75;
         min-height: 700px;
         width: 100%;
-        background: url(../images/main_event/PNC_Kuro_Event_CG.png);
-        background-size: cover;
-        background-position: center;
+
         display: flex;
         flex-direction: column;
         box-shadow: var(--shadow);
         justify-content: space-around;
         font-size: 3rem;
+        position: relative;
+        isolation: isolate;
+    }
+
+    /* Controls opacity */
+    .event-wrap::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        opacity: var(--bg-image-opacity);
+
+        background-image: var(--bg-image);
+        background-size: cover;
+        background-position: center;
     }
 
     .event-name {
         display: flex;
         margin-left: 50px;
-        font-size: 2.5rem;
     }
+
+    .event-name h1 {
+        font-size: 3rem;
+    }
+    .event-wrap .time-remaining {
+        margin-bottom: 100px;
+    }
+
 
     .doll-item {
-        width: 250px;
+        max-width: 150px;
     }
 
-    .doll-skins h3 {
+    .doll-skins h3,
+    .doll-skins h4 {
         font-size: 1em;
     }
 
@@ -274,6 +318,13 @@ footer {
 
 
 @media(min-width: 1000px) {
+
+    /* Timer Styling */
+    .time-remaining .countdown-timer-container {
+        margin-bottom: -100px;
+        font-size: 1.5rem;
+    }
+
     .rate-up {
         display: flex;
         flex-direction: row;
@@ -286,8 +337,33 @@ footer {
         max-width: 600px;
     }
 
+    .upcoming-event img {
+        max-width: 600px;
+    }
+
     .ongoing-event {
         flex-direction: row;
+    }
+
+    .skin {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .skin-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doll-skins {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        font-size: 1.2rem;
+        gap: 50px;
     }
 
 }
@@ -305,21 +381,15 @@ footer {
     }
 
     h2 {
-        font-size: 3.5rem;
-    }
-
-    /* Timer Styling */
-    .time-remaining .countdown-timer-container {
-        margin-bottom: -50px;
-        font-size: 1rem;
+        font-size: 3rem;
     }
 
     .time-remaining .countdown-timer-event {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .countdown-timer-container {
-        font-size: 1.6rem;
+        font-size: 1.rem;
     }
 
     /* Main Event & Rate-Up Wrapper */
@@ -360,7 +430,7 @@ footer {
     .ongoing-event {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;    
+        justify-content: space-around;
     }
 
     /* Sales */
@@ -373,6 +443,42 @@ footer {
         flex: 1;
         justify-content: center;
         gap: 50px;
+        width: 100%;
     }
 
+    .skin-container {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .skin-container img {
+        max-width: 700px;
+    }
+
+    .doll-item {
+        max-width: 120px;
+        text-align: center;
+    }
+
+    .skin {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .skin-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doll-skins {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
 }
