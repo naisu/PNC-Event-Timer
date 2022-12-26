@@ -54,6 +54,10 @@ img {
     padding: 0.7em;
 }
 
+.full-img img:hover {
+    opacity: 0.70;
+}
+
 .heading {
     margin: 20px 0px;
     width: 100%;
@@ -235,6 +239,10 @@ img {
     margin-bottom: -40px;
 }
 
+.ongoing-event .countdown-timer-container {
+    font-size: 1.6rem;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -266,7 +274,6 @@ footer {
         --bg-image-opacity: 0.75;
         min-height: 700px;
         width: 100%;
-
         display: flex;
         flex-direction: column;
         box-shadow: var(--shadow);
@@ -297,6 +304,7 @@ footer {
     .event-name h1 {
         font-size: 3rem;
     }
+
     .event-wrap .time-remaining {
         margin-bottom: 100px;
     }
@@ -311,8 +319,13 @@ footer {
         font-size: 1em;
     }
 
+    .pack .countdown-timer-container {
+        font-size: 1.5rem;
+    }
+
     .pack img {
-        min-height: 225px;
+        max-width: 400px;
+        height: auto;
     }
 }
 
@@ -356,6 +369,10 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .skin-item .full-img {
+        max-width: 800px;
     }
 
     .doll-skins {
@@ -455,6 +472,7 @@ footer {
 
     .skin-container img {
         max-width: 700px;
+        max-height: 330px;
     }
 
     .doll-item {

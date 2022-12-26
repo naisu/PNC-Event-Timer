@@ -92,6 +92,8 @@ function timerRemoveElements(id, itemId) {
     }
 }
 
+//Hours +8 to account for UTC-8
+
 // TIMER 1 (ENDS: 2022/12/26 03:59:59) [Current Battlepass]
 setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'December 26, 2022 12:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
@@ -109,6 +111,9 @@ setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#se
 
 // TIMER 6 (ENDS: 2023/01/10 23:59:59) [Christmas Skins, Furniture]
 setInterval(function () { countDown('#days-t6', '#hours-t6', '#minutes-t6', '#seconds-t6', 'January 11, 2023 08:00:00 UTC+00:00', '.t6', '.t6-item') }, 1000);
+
+// TIMER 7 (ENDS: 2023/01/23 03:59:59) [Intium Mechanica]
+setInterval(function () { countDown('#days-t7', '#hours-t7', '#minutes-t7', '#seconds-t7', 'January 23, 2023 12:00:00 UTC+00:00', '.t7', '.t7-item') }, 1000);
 
 // TIMER FOR SERVER / RESET
 setInterval(function () { countReset(".sr-hours", ".sr-minutes", ".sr-seconds") }, 1000)
