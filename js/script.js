@@ -104,7 +104,7 @@ setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#se
 setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'December 28, 2022 08:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
 // TIMER 4 (STARTS: 2022/12/28 00:00:00) [The Divine Hershey's Kiss]
-setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'December 28, 2022 08:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
+setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'December 28, 2022 09:30:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
 
 // TIMER 5 (ENDS: 2022/12/28 04:59:59) [Christmas Packs, 2x Frag, 2x Vuln]
 setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'December 28, 2022 13:00:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
