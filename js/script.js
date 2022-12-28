@@ -103,7 +103,7 @@ setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#se
 // TIMER 2 (ENDS: 2023/01/24 23:59:59 [Divine Hersey, Ocean Dancer, Hatsuchiri End, Nightmare Grotto]
 setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'January 25, 2023 08:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
 
-// TIMER 5 (ENDS: 2022/12/28 04:59:59) [Christmas Packs, 2x Frag, 2x Vuln]
+// TIMER 5 
 setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'December 28, 2022 13:00:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
 
 // TIMER 6 (ENDS: 2023/01/10 23:59:59) [Christmas Skins, Furniture, Evelyn]
