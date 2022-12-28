@@ -94,26 +94,26 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 1 (ENDS: 2022/12/26 03:59:59) [Current Battlepass]
-setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'December 26, 2022 12:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
+// TIMER 0 (ENDS: 2023/01/04 00:00:00) [Hatsuchiri Starts]
+setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'January 04, 2023 08:00:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
-// TIMER 2 (STARTS: 2022/12/26 05:00:00 | ENDS: 2023/01/23 03:59:59) [Next Battlepass]
-setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'December 26, 2022 13:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
+// TIMER 1 (ENDS: 2023/01/18 23:59:59) [De Lacey]
+setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'January 19, 2023 08:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
-// TIMER 3 (ENDS: 2022/12/27 23:59:59) [Kuro Livestreaming, Rate Up]
-setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'December 28, 2022 08:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
-
-// TIMER 4 (STARTS: 2022/12/28 00:00:00) [The Divine Hershey's Kiss]
-setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'December 28, 2022 09:30:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
+// TIMER 2 (ENDS: 2023/01/24 23:59:59 [Divine Hersey, Ocean Dancer, Hatsuchiri End]
+setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'January 25, 2023 08:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
 
 // TIMER 5 (ENDS: 2022/12/28 04:59:59) [Christmas Packs, 2x Frag, 2x Vuln]
 setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'December 28, 2022 13:00:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
 
-// TIMER 6 (ENDS: 2023/01/10 23:59:59) [Christmas Skins, Furniture]
+// TIMER 6 (ENDS: 2023/01/10 23:59:59) [Christmas Skins, Furniture, Evelyn]
 setInterval(function () { countDown('#days-t6', '#hours-t6', '#minutes-t6', '#seconds-t6', 'January 11, 2023 08:00:00 UTC+00:00', '.t6', '.t6-item') }, 1000);
 
 // TIMER 7 (ENDS: 2023/01/23 03:59:59) [Intium Mechanica]
 setInterval(function () { countDown('#days-t7', '#hours-t7', '#minutes-t7', '#seconds-t7', 'January 23, 2023 12:00:00 UTC+00:00', '.t7', '.t7-item') }, 1000);
+
+// TIMER 8 (ENDS: 2023/01/04 05:00:00) [Divine Heresy, Turquoise Dive, Medic, Special Offer Pack]
+setInterval(function () { countDown('#days-t8', '#hours-t8', '#minutes-t8', '#seconds-t8', 'January 04, 2023 13:00:00 UTC+00:00', '.t8', '.t8-item') }, 1000);
 
 // TIMER FOR SERVER / RESET
 setInterval(function () { countReset(".sr-hours", ".sr-minutes", ".sr-seconds") }, 1000)

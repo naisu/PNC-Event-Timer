@@ -110,7 +110,7 @@ img {
     display: flex;
     flex-direction: column;
     margin: 0;
-    gap: 20px;
+    gap: 0px;
     font-family: "Allerta Stencil", sans-serif;
 }
 
@@ -126,7 +126,6 @@ img {
     grid-template-columns: 120px 40px 40px 40px;
     align-items: flex-start;
 }
-
 
 /* MAIN EVENT */
 
@@ -146,15 +145,22 @@ img {
     align-items: center;
 }
 
-.rate-up {
+.rate-up,
+.rate-wrap .heading {
     max-width: 490px;
-    align-content: center;
+}
 
+.rate-wrap .heading {
+    margin-bottom: 10px;
+}
+
+.rate-wrap .item {
+    margin-bottom: -10px;
 }
 
 .active-banner {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     width: 100%;
     box-shadow: var(--shadow);
 }
@@ -239,10 +245,6 @@ img {
     margin-bottom: -40px;
 }
 
-.ongoing-event .countdown-timer-container {
-    font-size: 1.6rem;
-}
-
 /* Footer */
 footer {
     text-align: center;
@@ -270,8 +272,8 @@ footer {
     }
 
     .event-wrap {
-        --bg-image: url(../images/main_event/PNC_Kuro_Event_CG.png);
-        --bg-image-opacity: 0.75;
+        --bg-image: url(../images/main_event/divine_heresy.jpg);
+        --bg-image-opacity: 0.9;
         min-height: 700px;
         width: 100%;
         display: flex;
@@ -298,11 +300,11 @@ footer {
 
     .event-name {
         display: flex;
-        margin-left: 50px;
+        justify-content: center;
     }
 
     .event-name h1 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
 
     .event-wrap .time-remaining {
@@ -338,24 +340,12 @@ footer {
         font-size: 1.5rem;
     }
 
-    .rate-up {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-evenly;
-
-    }
-
     .ongoing-event img {
-        max-width: 600px;
+        max-width: 500px;
     }
 
     .upcoming-event img {
         max-width: 600px;
-    }
-
-    .ongoing-event {
-        flex-direction: row;
     }
 
     .skin {
@@ -416,7 +406,7 @@ footer {
 
     .event-wrap {
         min-width: 1000px;
-        max-height: 700px;
+        max-height: auto;
     }
 
     .rate-wrap {
@@ -430,7 +420,6 @@ footer {
 
     .rate-up {
         flex-direction: column;
-
     }
 
     .rate-up img {
@@ -446,8 +435,9 @@ footer {
     /* Ongoing Events */
     .ongoing-event {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
+        gap: 150px;
     }
 
     /* Sales */
