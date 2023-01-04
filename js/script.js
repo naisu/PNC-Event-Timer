@@ -94,8 +94,8 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 0 (ENDS: 2023/01/04 00:00:00) [Hatsuchiri Starts]
-setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'January 04, 2023 08:00:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
+// TIMER 0 (ENDS: 2023/01/08 04:59:59) [New Years Event End]
+setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'January 08, 2023 13:00:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
 // TIMER 1 (ENDS: 2023/01/18 23:59:59) [De Lacey]
 setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'January 19, 2023 08:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);

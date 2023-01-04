@@ -235,7 +235,6 @@ img {
     text-align: center;
     flex: 1;
 }
-
 .event {
     max-width: 1400px;
     margin: 0px 0px 0px 0px;
@@ -341,7 +340,7 @@ footer {
     }
 
     .ongoing-event img {
-        max-width: 500px;
+        max-width: 800px;
     }
 
     .upcoming-event img {
@@ -429,7 +428,7 @@ footer {
     .rate-up .countdown-timer-container {
         font-size: 1.2rem;
         width: 290px;
-        margin: 20px 0px;
+        margin-top: 10px;
     }
 
     /* Ongoing Events */
