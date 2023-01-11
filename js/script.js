@@ -94,26 +94,27 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 0 (ENDS: 2023/01/08 04:59:59) [New Years Event End]
-setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'January 08, 2023 13:00:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
+// TIMER 0 (ENDS: 2023/02/08 00:00:00) [Hubble Skin, New Year's Vigil]
+setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'February 8, 2023 08:00:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
 // TIMER 1 (ENDS: 2023/01/18 23:59:59) [De Lacey]
 setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'January 19, 2023 08:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
-// TIMER 2 (ENDS: 2023/01/24 23:59:59 [Divine Hersey, Ocean Dancer, Hatsuchiri End, Nightmare Grotto]
+// TIMER 2 (ENDS: 2023/01/24 23:59:59 [Divine Hersey, Ocean Dancer, Hatsuchiri End, Nightmare Grotto, Gin Rateup]
 setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'January 25, 2023 08:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
 
-// TIMER 5 
-setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'December 28, 2022 13:00:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
+// TIMER 3 (STARTS: 2023/01/16 05:00:00 [Exception Protocol Season 1]) 
+setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'January 16, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
-// TIMER 6 (ENDS: 2023/01/10 23:59:59) [Christmas Skins, Furniture, Evelyn]
-setInterval(function () { countDown('#days-t6', '#hours-t6', '#minutes-t6', '#seconds-t6', 'January 11, 2023 08:00:00 UTC+00:00', '.t6', '.t6-item') }, 1000);
+// TIMER 4 (STARTS: 2023/01/18 05:00:00 [2x Resource, ALL PACKS])
+setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'January 18, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
+
+// TIMER 5 (STARTS: 2023/02/01 05:00:00 [2x Vuln])
+setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'February 01, 2023 13:00:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
 
 // TIMER 7 (ENDS: 2023/01/23 03:59:59) [Intium Mechanica]
 setInterval(function () { countDown('#days-t7', '#hours-t7', '#minutes-t7', '#seconds-t7', 'January 23, 2023 12:00:00 UTC+00:00', '.t7', '.t7-item') }, 1000);
 
-// TIMER 8 (ENDS: 2023/01/04 05:00:00) [Divine Heresy, Turquoise Dive, Medic, Special Offer Pack]
-setInterval(function () { countDown('#days-t8', '#hours-t8', '#minutes-t8', '#seconds-t8', 'January 04, 2023 13:00:00 UTC+00:00', '.t8', '.t8-item') }, 1000);
 
 // TIMER FOR SERVER / RESET
 setInterval(function () { countReset(".sr-hours", ".sr-minutes", ".sr-seconds") }, 1000)
