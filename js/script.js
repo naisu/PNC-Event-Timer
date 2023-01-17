@@ -103,8 +103,8 @@ setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#se
 // TIMER 2 (ENDS: 2023/01/24 23:59:59 [Divine Hersey, Ocean Dancer, Hatsuchiri End, Nightmare Grotto, Gin Rateup]
 setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'January 25, 2023 08:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
 
-// TIMER 3 (STARTS: 2023/01/16 05:00:00 [Exception Protocol Season 1]) 
-setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'January 16, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
+// TIMER 3 (STARTS: 2023/01/16 05:00:00 [Exception Protocol Season 2]) 
+setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'January 30, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
 // TIMER 4 (STARTS: 2023/01/18 05:00:00 [2x Resource, ALL PACKS])
 setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'January 18, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
