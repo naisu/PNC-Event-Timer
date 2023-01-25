@@ -271,7 +271,7 @@ footer {
     }
 
     .event-wrap {
-        --bg-image: url(../images/main_event/divine_heresy.jpg);
+        --bg-image: url(../images/main_event/nym_cloud.jpg);
         --bg-image-opacity: 0.9;
         min-height: 700px;
         width: 100%;
@@ -300,10 +300,13 @@ footer {
     .event-name {
         display: flex;
         justify-content: center;
+        margin-left: 400px;
+        margin-top: 100px;
+    
     }
 
     .event-name h1 {
-        font-size: 5rem;
+        font-size: 3.9rem;
     }
 
     .event-wrap .time-remaining {
