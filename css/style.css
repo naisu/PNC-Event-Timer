@@ -123,8 +123,13 @@ img {
 
 .countdown-server-container {
     display: grid;
-    grid-template-columns: 120px 40px 40px 40px;
-    align-items: flex-start;
+    grid-template-columns: 120px 45px 45px 45px;
+}
+
+.countdown-server-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* MAIN EVENT */
