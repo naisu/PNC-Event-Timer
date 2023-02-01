@@ -105,8 +105,8 @@ setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#se
 // TIMER 3 (STARTS: 2023/02/13 05:00:00 [Exception Protocol Season 2]) 
 setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'February 13, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
-// TIMER 5 (STARTS: 2023/02/01 05:00:00 [2x Vuln])
-setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'February 01, 2023 13:00:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
+// TIMER 4 (ENDS: 2023/02/08 05:00:00) [2x Vuln]
+setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'February 8, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
 
 
 
