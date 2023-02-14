@@ -102,8 +102,8 @@ setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#se
 // TIMER 2 (ENDS: 2023/02/15 00:00:00 [Daiyan Skin, Daiyan Rate up])
 setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'February 15, 2023 08:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
 
-// TIMER 3 (STARTS: 2023/02/13 05:00:00 [Exception Protocol Season 2]) 
-setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'February 13, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
+// TIMER 3 (STARTS: 2023/02/27 05:00:00 [Exception Protocol Season 2]) 
+setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'February 27, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
 // TIMER 4 (ENDS: 2023/02/15 05:00:00 [Packs])
 setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'February 15, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
