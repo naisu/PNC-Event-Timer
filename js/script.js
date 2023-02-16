@@ -93,20 +93,17 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 0 (ENDS: 2023/3/7) [Sweet Secrets]
+// TIMER 0 (ENDS: 2023/3/7 18:30:00) [Sweet Secrets, Quenching Operation, Python]
 setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'March 8, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
 // TIMER 1 (ENDS: 2023/02/20 04:00:00 [Magrasea Battle Pass])
 setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'February 20, 2023 12:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
-// TIMER 2 (ENDS: 2023/02/15 00:00:00 [Daiyan Skin, Daiyan Rate up])
-setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'February 15, 2023 08:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
-
 // TIMER 3 (STARTS: 2023/02/27 05:00:00 [Exception Protocol Season 2]) 
 setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'February 27, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
-// TIMER 4 (ENDS: 2023/02/15 05:00:00 [Packs])
-setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'February 15, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
+// TIMER 4 (ENDS: 2023/03/01 05:00:00 [Heartfelt House of Cocoa])
+setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'March 01, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
 
 // TIMER 5 (ENDS: 2023/02/21 18:30:00 [Vee Banner])
 setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'February 22, 2023 02:30:00 UTC+00:00', '.t5', '.t5-item') }, 1000);

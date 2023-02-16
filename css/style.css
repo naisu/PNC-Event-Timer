@@ -276,7 +276,7 @@ footer {
     }
 
     .event-wrap {
-        --bg-image: url(../images/main_event/nym_cloud.jpg);
+        --bg-image: url(../images/main_event/quenching_operation.png);
         --bg-image-opacity: 0.9;
         min-height: 700px;
         width: 100%;
@@ -305,17 +305,15 @@ footer {
     .event-name {
         display: flex;
         justify-content: center;
-        margin-left: 400px;
-        margin-top: 100px;
-    
+        margin-top: 150px;
     }
 
     .event-name h1 {
-        font-size: 3.9rem;
+        font-size: 5rem;
     }
 
     .event-wrap .time-remaining {
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
 
 
@@ -413,7 +411,7 @@ footer {
 
     .event-wrap {
         min-width: 1000px;
-        max-height: auto;
+        max-height: 700px;
     }
 
     .rate-wrap {
