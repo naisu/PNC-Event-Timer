@@ -93,16 +93,16 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 0 (ENDS: 2023/3/7 18:30:00) [Sweet Secrets, Quenching Operation, Python]
+// TIMER 0 (ENDS: 2023/3/7 18:30:00) [Sweet Secrets, Quenching Operation, Python, Vee]
 setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'March 8, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
-// TIMER 1 (ENDS: 2023/02/20 04:00:00 [Magrasea Battle Pass])
-setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'February 20, 2023 12:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
+// TIMER 1 (ENDS: 2023/03/20 05:00:00 [Magrasea Battle Pass])
+setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'March 20, 2023 13:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
 // TIMER 3 (STARTS: 2023/02/27 05:00:00 [Exception Protocol Season 2]) 
 setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'February 27, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
-// TIMER 4 (ENDS: 2023/03/01 05:00:00 [Heartfelt House of Cocoa])
+// TIMER 4 (ENDS: 2023/03/01 05:00:00 [Heartfelt House of Cocoa, Packs])
 setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'March 01, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
 
 // TIMER 5 (ENDS: 2023/02/21 18:30:00 [Vee Banner])
