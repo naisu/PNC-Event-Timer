@@ -440,9 +440,9 @@ footer {
     /* Ongoing Events */
     .ongoing-event {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
-        gap: 150px;
+        /* gap: 150px; */
     }
 
     /* Sales */
