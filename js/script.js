@@ -102,8 +102,7 @@ setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#se
 // TIMER 3 (STARTS: 2023/03/13 05:00:00 [Exception Protocol Season 5]) 
 setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'March 13, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
-// TIMER 4 (ENDS: 2023/03/01 05:00:00 [Heartfelt House of Cocoa, Packs])
-setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'March 01, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
+
 
 // TIMER 5 (ENDS: 2023/03/06 05:00:00 [2x Algo])
 setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'March 6, 2023 13:00:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
