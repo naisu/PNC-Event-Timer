@@ -99,11 +99,8 @@ setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#se
 // TIMER 1 (ENDS: 2023/03/20 05:00:00 [Magrasea Battle Pass])
 setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'March 20, 2023 13:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
-// TIMER 3 (ENDS: 2023/03/13 05:00:00 [Exception Protocol Season 5]) 
-setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'March 13, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
-
-// TIMER 4 (ENDS: 2023/03/15 05:00:00 [Luxuriant Springtide]) 
-setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'March 15, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
+// TIMER 3 (ENDS: 2023/03/27 05:00:00 [Exception Protocol Season 6]) 
+setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'March 27, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
 // TIMER 5 (ENDS: 2023/03/21 19:30:00 [Puzzle])
 setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'March 21, 2023 03:30:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
