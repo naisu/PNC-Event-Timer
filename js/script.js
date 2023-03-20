@@ -96,8 +96,8 @@ function timerRemoveElements(id, itemId) {
 // TIMER 0 (ENDS: 2023/3/28 19:30:00) [Nascita, Nanaka]
 setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'March 28, 2023 03:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
-// TIMER 1 (ENDS: 2023/03/20 05:00:00 [Magrasea Battle Pass])
-setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'March 20, 2023 13:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
+// TIMER 1 (ENDS: 2023/04/17 05:00:00 [Magrasea Battle Pass])
+setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'April 17, 2023 13:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
 // TIMER 3 (ENDS: 2023/03/27 05:00:00 [Exception Protocol Season 6]) 
 setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'March 27, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
