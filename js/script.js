@@ -93,7 +93,7 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 0 (ENDS: 2023/3/28 19:30:00) [Nascita, Nanaka]
+// TIMER 0 (ENDS: 2023/3/28 19:30:00) [Nascita]
 setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'March 29, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
 // TIMER 1 (ENDS: 2023/04/17 05:00:00 [Magrasea Battle Pass])
@@ -102,10 +102,10 @@ setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#se
 // TIMER 3 (ENDS: 2023/03/27 05:00:00 [Exception Protocol Season 6]) 
 setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'March 27, 2023 12:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
-// TIMER 5 (ENDS: 2023/03/21 19:30:00 [Puzzle])
-setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'March 22, 2023 02:30:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
+// TIMER 5 (ENDS: 2023/04/11 19:30:00 [Puzzle])
+setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'April 12, 2023 02:30:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
 
-// TIMER 6 (ENDS: 2023/04/04 19:29:00 [Otium, Burbank Furniture])
+// TIMER 6 (ENDS: 2023/04/04 19:29:00 [Otium, Burbank Furniture, Aki])
 setInterval(function () { countDown('#days-t6', '#hours-t6', '#minutes-t6', '#seconds-t6', 'April 5, 2023 02:30:00 UTC+00:00', '.t6', '.t6-item') }, 1000);
 
 
