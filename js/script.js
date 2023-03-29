@@ -93,14 +93,14 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 0 (ENDS: 2023/3/28 19:30:00) [Nascita]
-setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'March 29, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
+// TIMER 0 (ENDS: 2023/4/2 05:00:00) [Resource]
+setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'April 2, 2023 12:00:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
 // TIMER 1 (ENDS: 2023/04/17 05:00:00 [Magrasea Battle Pass])
 setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'April 17, 2023 12:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
-// TIMER 3 (ENDS: 2023/03/27 05:00:00 [Exception Protocol Season 6]) 
-setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'March 27, 2023 12:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
+// TIMER 3 (ENDS: 2023/03/27 05:00:00 [Exception Protocol]) 
+setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'April 10, 2023 12:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
 // TIMER 5 (ENDS: 2023/04/11 19:30:00 [Puzzle])
 setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'April 12, 2023 02:30:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
