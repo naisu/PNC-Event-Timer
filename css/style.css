@@ -276,7 +276,7 @@ footer {
     }
 
     .event-wrap {
-        --bg-image: url(../images/main_event/inverted_mordent_burbank.jpg);
+        --bg-image: url(../images/main_event/helix_event.png);
         --bg-image-opacity: 0.9;
         min-height: 800px;
         width: 100%;
@@ -287,7 +287,7 @@ footer {
         font-size: 3rem;
         position: relative;
         isolation: isolate;
-        text-shadow: 0 2px 5px rgba(255, 0, 85, 0.8);
+        text-shadow: 0 2px 5px rgba(63, 116, 126, 0.932);
     }
 
     /* Controls opacity */
@@ -310,7 +310,7 @@ footer {
     }
 
     .event-name h1 {
-        font-size: 3.5rem;
+        font-size: 5rem;
     }
 
     .event-wrap .time-remaining {
