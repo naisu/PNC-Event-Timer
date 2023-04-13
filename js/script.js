@@ -93,23 +93,17 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 0 (ENDS: 2023/5/2 18:30:00) [Call of Study, Furniture Set]
+// TIMER 0 (ENDS: 2023/5/2 18:30:00) [Call of Study, Furniture Set, Helix Event End, Helix]
 setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'May 3, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
 // TIMER 1 (ENDS: 2023/04/17 05:00:00 [Magrasea Battle Pass])
 setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'April 17, 2023 12:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
-// TIMER 3 (ENDS: 2023/04/10 05:00:00 [Exception Protocol]) 
-setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'April 10, 2023 12:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
+// TIMER 3 (ENDS: 2023/04/24 05:00:00 [Exception Protocol]) 
+setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'April 24, 2023 12:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
-// TIMER 5 (ENDS: 2023/04/11 19:30:00 [Puzzle])
-setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'April 12, 2023 02:30:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
-
-// TIMER 6 (ENDS: 2023/04/11 18:30:00 [Helix Event Start, Helix])
-setInterval(function () { countDown('#days-t6', '#hours-t6', '#minutes-t6', '#seconds-t6', 'April 12, 2023 02:30:00 UTC+00:00', '.t6', '.t6-item') }, 1000);
-
-// TIMER 7 (ENDS: 2023/04/12 05:00:00 [Fool's Duality])
-setInterval(function () { countDown('#days-t7', '#hours-t7', '#minutes-t7', '#seconds-t7', 'April 12, 2023 12:30:00 UTC+00:00', '.t7', '.t7-item') }, 1000);
+// TIMER 6 (ENDS: 2023/05/02 18:30:00 [])
+setInterval(function () { countDown('#days-t6', '#hours-t6', '#minutes-t6', '#seconds-t6', 'May 3, 2023 02:30:00 UTC+00:00', '.t6', '.t6-item') }, 1000);
 
 // TIMER 8 (ENDS: 2023/04/18 18:30:00 [Banksy, Kuro])
 setInterval(function () { countDown('#days-t8', '#hours-t8', '#minutes-t8', '#seconds-t8', 'April 19, 2023 02:30:00 UTC+00:00', '.t8', '.t8-item') }, 1000);
