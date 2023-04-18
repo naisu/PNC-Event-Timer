@@ -96,8 +96,8 @@ function timerRemoveElements(id, itemId) {
 // TIMER 0 (ENDS: 2023/5/2 18:30:00) [Call of Study, Furniture Set, Helix Event End, Helix]
 setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'May 3, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
-// TIMER 1 (ENDS: 2023/04/17 05:00:00 [Magrasea Battle Pass])
-setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'April 17, 2023 12:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
+// TIMER 1 (ENDS: 2023/05/15 05:00:00 [Magrasea Battle Pass])
+setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'May 15, 2023 12:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
 // TIMER 3 (ENDS: 2023/04/24 05:00:00 [Exception Protocol]) 
 setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'April 24, 2023 12:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
