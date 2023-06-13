@@ -103,10 +103,10 @@ setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#se
 setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'June 07, 2023 02:30:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
 
 // TIMER 3 (ENDS: 2023/06/05 05:00:00 [Exception Protocol]) 
-setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'June 5, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
+setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'June 19, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
-// TIMER 4 (ENDS: 2023/06/12 05:00:00 [Magrasea]) 
-setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'June 12, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
+// TIMER 4 (ENDS: 2023/07/10 05:00:00 [Magrasea]) 
+setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'July 10, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
 
 // TIMER 5 (ENDS: 2023/06/27 18:30:00) [Clukay Skin, Furniture]
 setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'June 28, 2023 02:30:00 UTC+00:00', '.t5', '.t5-item') }, 1000);

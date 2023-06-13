@@ -279,7 +279,7 @@ footer {
         --bg-image: url(../images/main_event/aberrance_chain.png);
         --bg-image-opacity: 0.9;
         /* Change depending on how many active banners */
-        min-height: 1000px;
+        min-height: 800px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -307,7 +307,7 @@ footer {
     .event-name {
         display: flex;
         justify-content: center;
-        margin-top: 350px;
+        margin-top: 250px;
     }
 
     .event-name h1 {
