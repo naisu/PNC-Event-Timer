@@ -93,8 +93,8 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 0 (ENDS: 2023/6/13 18:30:00) [Aberance's Chain]
-setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'June 14, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
+// TIMER 0 (ENDS: 2023/6/20 18:30:00) [Divergent Shadows]
+setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'June 21, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
 // TIMER 1 (ENDS: 2023/06/20 18:30:00 [Clukay Banner])
 setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'June 21, 2023 02:30:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
@@ -111,8 +111,8 @@ setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#se
 // TIMER 5 (ENDS: 2023/06/27 18:30:00) [Clukay Skin, Furniture]
 setInterval(function () { countDown('#days-t5', '#hours-t5', '#minutes-t5', '#seconds-t5', 'June 28, 2023 02:30:00 UTC+00:00', '.t5', '.t5-item') }, 1000);
 
-// TIMER 6 (ENDS: 2023/5/30 18:30:00) [Classical Repertoire]
-setInterval(function () { countDown('#days-t6', '#hours-t6', '#minutes-t6', '#seconds-t6', 'May 31, 2023 02:30:00 UTC+00:00', '.t6', '.t6-item') }, 1000);
+// TIMER 6 (ENDS: 2023/7/11 18:30:00) [Childlike Fantasies]
+setInterval(function () { countDown('#days-t6', '#hours-t6', '#minutes-t6', '#seconds-t6', 'July 12, 2023 02:30:00 UTC+00:00', '.t6', '.t6-item') }, 1000);
 
 
 // TIMER FOR SERVER / RESET
