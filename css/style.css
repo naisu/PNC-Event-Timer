@@ -276,7 +276,7 @@ footer {
     }
 
     .event-wrap {
-        --bg-image: url(../images/main_event/divergent_shadows.png);
+        --bg-image: url(../images/main_event/gastronomic_journey.jpg);
         --bg-image-opacity: 0.9;
         /* Change depending on how many active banners */
         min-height: 800px;

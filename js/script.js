@@ -93,17 +93,17 @@ function timerRemoveElements(id, itemId) {
 
 //Hours +8 to account for UTC-8
 
-// TIMER 0 (ENDS: 2023/6/20 18:30:00) [Divergent Shadows]
-setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'June 21, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
+// TIMER 0 (ENDS: 2023/6/20 18:30:00) [Gastronomic Journey]
+setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#seconds-t0', 'July 12, 2023 02:30:00 UTC+00:00', '.t0', '.t0-item') }, 1000);
 
-// TIMER 1 (ENDS: 2023/06/20 18:30:00 [Clukay Banner])
-setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'June 21, 2023 02:30:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
+// TIMER 1 (ENDS: 2023/06/26 05:00:00 [2x Vuln])
+setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'June 26, 2023 13:00:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
 // TIMER 2 (ENDS: 2023/06/06 18:30:00 [Sueyoi Banner]) 
 setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'June 07, 2023 02:30:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
 
-// TIMER 3 (ENDS: 2023/06/05 05:00:00 [Exception Protocol]) 
-setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'June 19, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
+// TIMER 3 (ENDS: 2023/07/03 05:00:00 [Exception Protocol]) 
+setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'July 03, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
 // TIMER 4 (ENDS: 2023/07/10 05:00:00 [Magrasea]) 
 setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'July 10, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
