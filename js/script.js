@@ -99,8 +99,8 @@ setInterval(function () { countDown('#days-t0', '#hours-t0', '#minutes-t0', '#se
 // TIMER 1 (ENDS: 2023/06/26 05:00:00 [Theater Retro])
 setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#seconds-t1', 'July 26, 2023 02:30:00 UTC+00:00', '.t1', '.t1-item') }, 1000);
 
-// TIMER 2 (ENDS: 2023/07/05 05:00:00 [Wishing Starbridge Workshop]) 
-setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'July 05, 2023 13:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
+// TIMER 2 (ENDS: 2023/07/26 05:00:00 [Wishing Starbridge Workshop]) 
+setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'July 26, 2023 13:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
 
 // TIMER 3 (ENDS: 2023/07/03 05:00:00 [Exception Protocol]) 
 setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'July 17, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
