@@ -103,7 +103,7 @@ setInterval(function () { countDown('#days-t1', '#hours-t1', '#minutes-t1', '#se
 setInterval(function () { countDown('#days-t2', '#hours-t2', '#minutes-t2', '#seconds-t2', 'July 26, 2023 13:00:00 UTC+00:00', '.t2', '.t2-item') }, 1000);
 
 // TIMER 3 (ENDS: 2023/07/03 05:00:00 [Exception Protocol]) 
-setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'July 17, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
+setInterval(function () { countDown('#days-t3', '#hours-t3', '#minutes-t3', '#seconds-t3', 'July 31, 2023 13:00:00 UTC+00:00', '.t3', '.t3-item') }, 1000);
 
 // TIMER 4 (ENDS: 2023/08/07 05:00:00 [Magrasea]) 
 setInterval(function () { countDown('#days-t4', '#hours-t4', '#minutes-t4', '#seconds-t4', 'August 07, 2023 13:00:00 UTC+00:00', '.t4', '.t4-item') }, 1000);
